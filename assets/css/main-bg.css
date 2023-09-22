@@ -1,0 +1,11 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/fustolt-kacsamell.png");
+  background-blend-mode: darken;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+  position: relative;
+}

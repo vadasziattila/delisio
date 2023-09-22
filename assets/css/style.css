@@ -1,0 +1,638 @@
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.hamburger-icon span {
+  background: #e3f2fd;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-icon span:nth-child(2),
+.hamburger-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.hamburger-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+:root .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+:root nav {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1vh;
+}
+
+:root .bg-dark {
+  background-color: #343a40 !important;
+}
+
+:root .dropdown-menu-dark {
+  background-color: #343a40 !important;
+}
+
+.hero {
+  margin-top: 50vh;
+}
+
+@media screen and (max-width: 400px) {
+  a.mobile {
+    font-size: 21px;
+  }
+}
+
+.link {
+  color: #c99750 !important;
+}
+
+.links a:hover {
+  color: #c99750 !important;
+}
+
+a:hover {
+  color: #c99750;
+}
+
+.about-hero {
+  margin-top: 15vh;
+  min-height: 100vh;
+}
+
+.carte-hero {
+  margin-top: 15vh;
+  min-height: 100vh;
+}
+
+.carte-row {
+  margin-bottom: 3vh;
+}
+
+.carte-header {
+  color: #c99750;
+}
+
+.carte-hero-text {
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+
+.carte-hero-price {
+  display: inline;
+}
+
+.carte-price {
+  background-color: #c99750;
+  border: 2px solid #c99750;
+  border-radius: 1vh;
+  width: fit-content;
+}
+
+.reserve-hero {
+  margin-top: 15vh;
+  margin-bottom: 2vh;
+  min-height: 100vh;
+}
+
+.reserve-hero-h1 {
+  color: #c99750;
+}
+
+.reserve-hero-text {
+  text-align: justify;
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+
+.stepper-active .stepper-head-icon {
+  background-color: #c99750 !important;
+}
+
+.stepper-invalid .stepper-head-icon {
+  background-color: #f93154 !important;
+}
+
+.reserve-row {
+  margin-bottom: 1vh;
+}
+
+.reserve-img {
+  margin-bottom: 2vh;
+}
+
+.table[type="checkbox"] {
+  display: none;
+}
+
+.reserve[type="checkbox"] {
+  display: none;
+}
+
+label svg {
+  fill: none;
+}
+
+.table[type="checkbox"]:checked + label svg path {
+  fill: #00b74a !important;
+}
+
+.reserve[type="checkbox"]:checked + label svg path {
+  fill: #f93154 !important;
+}
+
+:root .stepper-head:hover {
+  background-color: inherit !important;
+}
+
+:root .stepper-content {
+  margin-bottom: 2vh !important;
+}
+
+:root .form-label {
+  color: #c99750 !important;
+}
+
+:root .form-outline {
+  margin-bottom: 4vh !important;
+}
+
+@media screen and (max-width: 576px) {
+  :root .form-outline {
+    margin-bottom: 4.5vh !important;
+  }
+}
+
+:root .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-top: 0.125rem solid #c99750;
+  border-bottom: 0.125rem solid #c99750;
+  border-left: 0.125rem solid #c99750;
+}
+
+:root .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-color: #c99750;
+  box-shadow: -1px 0 0 0 #c99750, 0 1px 0 0 #c99750, 0 -1px 0 0 #c99750;
+}
+
+:root .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-bottom: 0.125rem solid;
+  border-color: #c99750;
+}
+
+:root .form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-color: #c99750;
+  box-shadow: 0 1px 0 0 #c99750;
+}
+
+:root .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-color: currentcolor currentcolor currentcolor #c99750;
+  border-bottom: 0.125rem solid #c99750;
+  border-right: 0.125rem solid #c99750;
+  border-top: 0.125rem solid #c99750;
+}
+
+:root .form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-color: #c99750;
+  box-shadow: 1px 0 0 0 #c99750, 0 -1px 0 0 #c99750, 0 1px 0 0 #c99750;
+}
+
+:root .datepicker-toggle-button {
+  color: #bdbdbd;
+}
+
+:root .datepicker-header {
+  background-color: #c99750;
+}
+
+:root .datepicker-cell.selected .datepicker-cell-content {
+  background-color: #c99750;
+}
+
+:root .datepicker-cell.current .datepicker-cell-content {
+  border: 1px solid #c99750;
+}
+
+:root .datepicker-footer-btn {
+  color: #c99750;
+}
+
+:root .datepicker-toggle-button:focus,
+.datepicker-toggle-button:hover {
+  color: #c99750 !important;
+}
+
+:root .timepicker-toggle-button {
+  color: #bdbdbd;
+}
+
+:root .timepicker-head {
+  background-color: #c99750;
+}
+
+:root .timepicker-time-tips-hours.active,
+.timepicker-time-tips-inner.active,
+.timepicker-time-tips-minutes.active {
+  background-color: #c99750;
+}
+
+:root .timepicker-time-tips-hours.active,
+.timepicker-time-tips-inner.active,
+.timepicker-time-tips-minutes.active {
+  background-color: #c99750 !important;
+}
+
+:root .timepicker-circle {
+  border: 14px solid #c99750;
+}
+
+:root .timepicker-hand-pointer {
+  background-color: #c99750;
+}
+
+:root .timepicker-middle-dot {
+  background-color: #c99750;
+}
+
+:root .timepicker-button {
+  color: #c99750;
+}
+
+:root .timepicker-input:focus + .timepicker-toggle-button,
+.timepicker-input:focus + .timepicker-toggle-button i,
+.timepicker-toggle-button:focus,
+.timepicker-toggle-button:hover {
+  color: #c99750 !important;
+}
+
+:root .form-check-input[type="checkbox"]:checked {
+  background-color: #c99750;
+}
+
+:root .form-check-input[type="checkbox"]:checked:focus {
+  background-color: #c99750;
+}
+
+:root .form-check-input:checked:focus {
+  border-color: #c99750;
+}
+
+:root .form-check-input:checked {
+  border-color: #c99750;
+}
+
+:root .form-check-input:checked:focus::before {
+  box-shadow: 0 0 0 13px #c99750 !important;
+}
+
+:root .btn:disabled {
+  background-color: #c99750;
+}
+
+:root .btn {
+  background-color: #c99750;
+  color: white;
+}
+
+:root .btn:hover {
+  background-color: #c99750;
+  color: white;
+}
+
+.reserve-1-img {
+  background-image: url("../img/fekete-gyongy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.reserve-2-img {
+  background-image: url("../img/korona.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.reserve-3-img {
+  background-image: url("../img/furj.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.reserve-4-img {
+  background-image: url("../img/kelkaposzta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.gallery-hero {
+  margin-top: 15vh;
+  min-height: 100vh;
+}
+
+.contact-hero {
+  margin-top: 15vh;
+  min-height: 100vh;
+}
+
+.about-1-img {
+  background-image: url("../img/about1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  border: 5px solid #0b1315;
+}
+
+.about-2-img {
+  background-image: url("../img/about2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  border: 5px solid #0b1315;
+}
+
+.about-3-img {
+  background-image: url("../img/about3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  border: 5px solid #0b1315;
+}
+
+.about-4-img {
+  background-image: url("../img/about4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  border: 5px solid #0b1315;
+}
+
+.carte-1-img {
+  background-image: url("../img/pisztrand-kaposzta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.carte-2-img {
+  background-image: url("../img/szarvar-tatar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.carte-3-img {
+  background-image: url("../img/kelkaposzta.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.carte-4-img {
+  background-image: url("../img/lazac-gravlax.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.carte-5-img {
+  background-image: url("../img/gomba.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.carte-6-img {
+  background-image: url("../img/korona.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.wine-1-img {
+  background-image: url("../img/vosne.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.wine-2-img {
+  background-image: url("../img/chardonnay.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #c99750;
+  border-color: #c99750;
+}
+
+.IdPassword {
+  position: relative;
+  z-index: 0;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  color: #c99750;
+  cursor: pointer;
+}
+
+:root .card {
+  border-radius: 1rem;
+}
+
+:root .login-back {
+  margin-top: 15px !important;
+}
+
+.login-back-btn {
+  color: #c99750 !important;
+}
+
+.login-back-text {
+  margin-left: 1vh;
+}
+
+:root .form-check-input.is-valid:checked,
+.was-validated .form-check-input:valid:checked {
+  background-color: #c99750 !important;
+}
+
+:root .form-check-input.is-valid ~ .was-validated .form-check-input:valid ~ {
+  color: #c99750 !important;
+}
+
+:root .form-check-input.is-valid ~ .was-validated .form-check-input:valid ~ {
+  color: #c99750 !important;
+}
+
+:root .form-check-input.is-valid,
+.was-validated .form-check-input:valid {
+  border-color: #c99750 !important;
+}
+
+:root .was-validated :valid.form-check-input[type="checkbox"]:checked:focus {
+  background-color: #c99750 !important;
+}
+
+:root .was-validated :valid.form-check-input:checked:focus::before,
+.was-validated :valid.form-check-input:focus::before {
+  box-shadow: 0 0 0 13px #c99750 !important;
+}
+
+:root .form-check-input {
+  border: 0.125rem solid #c99750;
+}
+
+:root .form-check-label,
+.was-validated ~ .form-check-label {
+  color: #c99750 !important;
+}
+
+.loginSmall {
+  color: lightgrey;
+  font-size: 10px;
+  margin-top: 2vh;
+  margin-bottom: -2vh;
+}
+
+.adminProfile {
+  color: #e3f2fd !important;
+}
+
+.reservations-hero {
+  margin-top: 15vh;
+  min-height: 100vh;
+}
+
+:root .badge-warning {
+  background-color: #fbf0da;
+  color: #73510d;
+}
+
+:root .badge-success {
+  background-color: #d6f0e0;
+  color: #0d6832;
+}
+
+.changeMenu-hero {
+  margin-top: 15vh;
+  min-height: 100vh;
+}
